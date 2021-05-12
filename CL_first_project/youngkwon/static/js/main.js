@@ -79,7 +79,7 @@ const pauseAnimation = (element) => {
             if(timer == -1) {
                 location.href = "http://localhost:8000/youngkwon/introduction/";
             }
-        }, 1000)
+        }, 700)
     },2000);
 }
 
@@ -134,7 +134,7 @@ const drawObstacle = () => {
 
 const decreaseXpos = () => {
     for(let i = 0; i < XPOS.length; i++) {
-        XPOS[i] -= 5;
+        XPOS[i] -= 8;
         if((XPOS[i] < FORWARD_DEADLINE && XPOS[i] >10) && S_PRESSED == false && RESULTFLAG) {
             RESULTFLAG = false;
             alert("Survive Time: " + TIME / 1000 + "초\n" + "Score: " + SCORE + "점");
