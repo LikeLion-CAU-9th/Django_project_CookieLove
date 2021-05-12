@@ -4,7 +4,7 @@ from taeyoung import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', include("chaeyeon.urls")),
-    path('', views.intro, name="intro"),
-    # path('', include("youngkwon.urls")),
+    path('chaeyeon/', include("chaeyeon.urls")),
+    path('taeyoung/', include("taeyoung.urls")),
+    path('youngkwon/', include("youngkwon.urls")),
 ]

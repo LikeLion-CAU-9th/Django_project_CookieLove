@@ -1,0 +1,79 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youngkwon's Introduction</title>
+    <link rel="stylesheet" href="{% static 'css/introduction.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="{% static 'js/main.js' %}"></script>
+</head>
+<nav>
+    <a href="http://localhost:8000/youngkwon/introduction/" style="text-decoration: none; color: #efefef;">
+        <div style="display: inline-block;">
+            <img class="logo_round" src="{% static 'image/logo.jpeg' %}">
+            <span id="nav_title" >YoungkwonInfo</span>
+        </div>
+    </a>
+    <ul>
+        <li>Home</li>
+        <li>Address</li>
+        <li>Whatever</li>
+    </ul>
+</nav>
+<body>
+    <sectioin class="main">
+        <div class="container">
+            <div class="lightZone">
+                <img class="light" src="{% static 'image/light.png' %}" alt="light">
+                <img class="light" src="{% static 'image/light.png' %}" alt="light">
+                <img class="light" src="{% static 'image/light.png' %}" alt="light">
+            </div>
+            <div class="caption">
+                <img src="{% static 'image/header-line.png' %}" alt="Line" class="tm-header-line">
+                &nbsp;<span class="welcome">Welcome To</span>&nbsp;&nbsp;
+                <img src="{% static 'image/header-line.png' %}" alt="Line" class="tm-header-line">
+                <p>
+                    Youngkwon Info
+                </p>
+                <button style="cursor: pointer;" class="btn_welcome" onclick="readyToRun()">READY?</button>
+            </div>
+        </div>
+    </sectioin>
+    <section id="sec_whoami">
+        <div class="container">
+            <span class="section_title">Youngkwon Kim, CAU-CSE</span>
+            <div style="margin: 50px 0px;">
+                <p class="section_text">
+                    안녕 멋쟁이 사자 여러분!<br>
+                    저는 중앙대학교 컴퓨터공학과 김영권입니다.<br>
+                    잘 부탁드려요~~
+                </p>
+                <img class="profile_img" src="{% static 'image/profile.jpeg' %}">
+            </div>
+        </div>
+    </section>
+    <section id="sec_game">
+        <div class="container">
+            <div class="suggestion_paper">
+                <div class="fade_text_board">
+                    <span class="fade_text" id="fade_text_1">근데 솔직히.....</span>
+                    <span class="fade_text" id="fade_text_2">자기소개는 너무 식상하잖아...</span>
+                    <span class="fade_text" id="fade_text_3">그래서 준비했어..!!</span>
+                    <span class="fade_text" id="fade_text_4">순발력 테스트!!!!</span>
+                </div>
+                <div class="game_console">
+                    <div class="game_start_counter">3</div>
+                    <canvas class="canvas_game" width="800px" height="400px"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youngkwon's Intro</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/main.js' %}"></script>
+</head>
+<body>
+    <video autoplay muted loop id="bgVideo">
+        <source src="{% static 'image/video-background.mp4' %}" type="video/mp4">
+    </video>
+
+    <div id="caption">
+        <button id="indexBtn" onclick="go()">GO!</button>
+    </div>
+
+    <div class="cookie" id="cookie01">
+        <img src="{% static 'image/cookie01.png' %}">
+    </div>
+
+    <div class="cookie" id="cookie02">
+        <img src="{% static 'image/cookie02.png' %}">
+    </div>
+
+    <div class="cookie" id="cookie03">
+        <img src="{% static 'image/cookie03.png' %}">
+    </div>
+
+    <div class="cookie" id="cookie04">
+        <img src="{% static 'image/cookie04.png' %}">
+    </div>
+
+    <div class="cookie" id="cookie05">
+        <img src="{% static 'image/cookie06.png' %}">
+    </div>
+
+    <div class="cookie" id="cookie06">
+        <img src="{% static 'image/cookie05.png' %}">
+    </div>
+
+    <div class="intro">
+        <h2>YoungkwonInfo</h2>
+        <p><span id="waitingTime">3</span>초 후 순간이동✌️</p>
+    </div>
+</body>
+</html>
