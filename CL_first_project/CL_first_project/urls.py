@@ -9,6 +9,5 @@ urlpatterns = [
     path('chaeyeon/', include("chaeyeon.urls")),
     path('taeyoung/', include("taeyoung.urls")),
     path('youngkwon/', include("youngkwon.urls")),
-    path('taeyoung/', views.intro, name="intro"),
     path('', mainHome, name="main-home")
 ]
