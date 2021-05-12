@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'youngkwon',
     'taeyoung',
     'chaeyeon',
+    'main'
 ]
 
 MIDDLEWARE = [
