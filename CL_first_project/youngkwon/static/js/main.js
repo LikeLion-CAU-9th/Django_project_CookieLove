@@ -98,7 +98,7 @@ const readyToRun = () => {
 const unrollSuggestion = () => {
     let paper = document.querySelectorAll('.suggestion_paper')[0];
     paper.style.animationName = "unroll_suggestion";
-    paper.style.animationDuration = "1s";
+    paper.style.animationDuration = ".7s";
     paper.style.animationTimingFunction = "linear";
     paper.style.animationFillMode = "forwards";
 }
@@ -190,12 +190,12 @@ const activeGameStartCounter = () => {
             target.innerHTML = "GO!";
             clearInterval(interval);
         }
-    }, 1000);
+    }, 700);
     setTimeout(() => {
         target.style.display = "none";
         document.querySelector(".canvas_game").style.display = "block";
         drawCanvas();
-    }, 1000 * (counter + 2));
+    }, 700 * (counter + 2));
 }
 
 const startGame = () => {
@@ -214,11 +214,11 @@ const startFadeText = () => {
         if(index == ft_length) {
             clearInterval(interval);
         }
-    },1500);
+    },700);
     setTimeout(() => {
         listAllDisappear(fade_text);
         startGame();
-    }, 1500 * (ft_length + 1));
+    }, 700 * (ft_length + 1));
 
 }
 
@@ -228,7 +228,7 @@ const introGame = () => {
     startFadeText();
     setTimeout(() => {
         startGame();
-    }, 1500 * (5));
+    }, 700 * (5));
 }
 
 window.onscroll = (ev) => {
